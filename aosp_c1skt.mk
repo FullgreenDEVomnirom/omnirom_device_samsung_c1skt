@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, device/samsung/i9300/full_i9300.mk)
+$(call inherit-product, device/samsung/c1skt/full_c1skt.mk)
 
 $(call inherit-product, vendor/haxynox/config/common.mk)
 
-PRODUCT_NAME := aosp_i9300
+PRODUCT_NAME := aosp_c1skt

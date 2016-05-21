@@ -15,16 +15,16 @@
 #
 
 # Get the long list of APNs
-PRODUCT_COPY_FILES := device/samsung/i9300/configs/apns-full-conf.xml:system/etc/apns-conf.xml
+PRODUCT_COPY_FILES := device/samsung/c1skt/configs/apns-full-conf.xml:system/etc/apns-conf.xml
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
-PRODUCT_NAME := full_i9300
-PRODUCT_DEVICE := i9300
+PRODUCT_NAME := full_c1skt
+PRODUCT_DEVICE := c1skt
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := GT-I9300
+PRODUCT_MODEL := SHV-E210S
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
@@ -36,5 +36,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="samsung/m0xx/m0:4.3/JSS15J/I9300XXUGNA7:user/release-keys" \
     PRIVATE_BUILD_DESC="m0xx-user 4.3 JSS15J I9300XXUGNA7 release-keys"
 
-$(call inherit-product, device/samsung/i9300/device.mk)
-$(call inherit-product-if-exists, vendor/samsung/i9300/device-vendor.mk)
+$(call inherit-product, device/samsung/c1skt/device.mk)
+$(call inherit-product-if-exists, vendor/samsung/c1skt/device-vendor.mk)

@@ -17,7 +17,7 @@
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
 
--include device/samsung/smdk4412-common/BoardCommonConfig.mk
+-include device/samsung/c1skt-common/BoardCommonConfig.mk
 
 
 # Enable dex-preoptimization to speed up first boot sequence
@@ -38,19 +38,19 @@ COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9300/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/c1skt/bluetooth
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
-TARGET_KERNEL_CONFIG := custom_i9300_defconfig
+TARGET_KERNEL_CONFIG := custom_c1skt_defconfig
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/i9300/rootdir/fstab.smdk4x12
+TARGET_RECOVERY_FSTAB := device/samsung/c1skt/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
 
 # Selinux
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/i9300/selinux
+    device/samsung/c1skt/selinux
 
 BOARD_SEPOLICY_UNION += \
     bluetooth.te \
@@ -75,14 +75,14 @@ BOARD_SEPOLICY_UNION += \
 #    sysinit.te
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := m0,i9300,GT-I9300
+TARGET_OTA_ASSERT_DEVICE := m0,i9300,GT-I9300,c1skt,SHV-E210S,c1ktt,SHV-E210K,c1lgt,SHV-E210L
 
 # Device specific header overrides
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/i9300/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/c1skt/include
 
 # inherit from the proprietary version
--include vendor/samsung/i9300/BoardConfigVendor.mk
+-include vendor/samsung/c1skt/BoardConfigVendor.mk
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/i9300/rootdir/fstab.smdk4x12
+TARGET_RECOVERY_FSTAB := device/samsung/c1skt/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
