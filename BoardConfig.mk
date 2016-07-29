@@ -86,3 +86,6 @@ TARGET_SPECIFIC_HEADER_PATH := device/samsung/c1skt/include
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/c1skt/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
+
+# TWRP
+TW_THEME := portrait_hdpi
